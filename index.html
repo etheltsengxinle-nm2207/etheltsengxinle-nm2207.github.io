@@ -1,16 +1,389 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>My NM2207 GitHub Portfolio</title>
-    <script src="scripts/counter.js"></script>
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
-  <body>
-    <h1>Hello world! 🚀</h1>
-    <h2>This is a site hosted on GitHub Pages.</h2>
-    <h3>Here's a hungry duck. Please feed him!</h3>
-    <h3 class="mouse"> 🦆</h3>
-    <h3>Food counter: <span class="counter">0</span> 🥙</h3>
-    <button>Feed!</button>
-  </body>
-</html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Hello!</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Ethel's NM2207 Final Project!
+            </span>
+          </a>
+
+          <div class="navbar-collapse" id="">
+            <div class="d-none d-lg-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+             
+            </div>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="#step1">STEP 1: Problem</a>
+                <a href="#step2">STEP 2: Research Question</a>
+                <a href="#step3">STEP 3: Finding Data</a>
+                <a href="#step4">STEP 4: Visualisation</a>
+
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-3 offset-md-2">
+                <div class="slider_detail">
+                  <h1>
+                    BORROWED 
+                    <span>
+                      WORDS
+                    </span>
+                  </h1>
+                  <p>
+                    Discover the beauty of borrowed words in English and Chinese, and why this matters.
+                  </p>
+                  <div>
+                    <a href="https://docs.google.com/document/d/1yjReMQqf77RLIcNXV2iSR2D9uOlzNCFJODMszZMIB7Y/edit?usp=sharing">
+                      Read More (Week 9 Project Documentation is here!)
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="slider_img-box">
+                  <img src="images/slider-img.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3 offset-md-2">
+                <div class="slider_detail">
+                  <h1>
+                    BORROWED
+                    <span>
+                      WORDS
+                    </span>
+                  </h1>
+                  <p>
+                    Discover the beauty of borrowed words in English and Chinese, and why this matters.
+                  </p>
+                  <div>
+                    <a href="https://docs.google.com/document/d/1yjReMQqf77RLIcNXV2iSR2D9uOlzNCFJODMszZMIB7Y/edit?usp=sharing">
+                      Read More (Week 9 Project Documentation is here!)
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="slider_img-box">
+                  <img src="images/slider-img.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding" id="step1">
+    <div class="container">
+      <h2>
+        Step 1: Problem
+      </h2>
+      <p>
+        We need to find out the frequency of borrowed words in Chinese to cultivate a greater appreciation for the corss-cultural interactions in language.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="about_card-container">
+        <div class="about_card">
+          <div class="about-detail">
+            <div class="about_img-box">
+              <img src="images/card-img-1.png" alt="">
+            </div>
+            <div class="card_detail-ox">
+              <h4>
+                CURRENT RESEARCH
+              </h4>
+              <p>
+                Shen (2009) examines the types of words borrowed from English in Chinese language, proposing that such words can be categorised into certain domains such as politics, 
+                economics, arts and entertainment, religion etc.
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="resources/article1.pdf" class="about_btn">
+              Read More (click me!)
+            </a>
+          </div>
+        </div>
+        <div class="about_card">
+          <div class="about-detail">
+            <div class="about_img-box">
+              <img src="images/card-img-2.png" alt="">
+            </div>
+            <div class="card_detail-ox">
+              <h4>
+                WHY THIS PROBLEM?
+              </h4>
+              <p>
+                Recent research has explored the types of words that are borrowed in different languages, yet not enough research is done to 
+                generate a data visualisation of the frequency of usage regarding certain words.
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="" class="about_btn">
+              Read More (don't click me)
+            </a>
+          </div>
+        </div>
+        <div class="about_card">
+          <div class="about-detail">
+            <div class="about_img-box">
+              <img src="images/card-img-3.png" alt="">
+            </div>
+            <div class="card_detail-ox">
+              <h4>
+                OUR AIM
+              </h4>
+              <p>
+                This study aims to fill in the gaps of data visualisation in the field of linguistic study, combining data from Google Ngram Viewer
+                and word lists from academic literature to provide a more nuanced understanding of data and the claims made in current linguistic research.
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="" class="about_btn">
+              Read More (don't click me)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- portfolio section -->
+  <section class="portfolio_section layout_padding2">
+    <div class="container" id="step2">
+      <h2>
+        STEP 2: RESEARCH QUESTION
+      </h2>
+      <p>
+        How can we track and make sense of the frequency of borrowed words from English to Chinese in the 20th/ 21st century? (Are the trends similar/ different/ unrelated/ interdependent? 
+        Do certain groups of words have a stronger relation to each other than other groups of words?)
+      </p>
+    
+
+  <!-- end portfolio section -->
+
+
+  <!-- team section  -->
+  <section class="team_section layout_padding" id="step3">
+    <div class="container">
+      <h2>
+        STEP 3: DATA
+      </h2>
+      <p>
+        Dataset: <a href=https://books.google.com/ngrams/>Google Ngram Viewer </a> <br> <br>
+
+        <b>Word List:</b>
+          <table class="center">
+            <tr>
+              <td>Category</td>
+              <td>English </td>
+              <td>Chinese</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Politics</td>
+              <td>Cold war</td>
+              <td>冷战 (leng zhan)</td>
+            </tr>
+            <tr>
+              <td>Utopia</td>
+              <td>乌托邦 (wu tuo bang)</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Religion</td>
+              <td>Eden</td>
+              <td>伊甸园 (yi dian yuan)</td>
+            </tr>
+            <tr>
+              <td>Missal</td>
+              <td>弥撒书 (mi sa shu)</td>
+            </tr>
+            <tr>
+              <td>Amen</td>
+              <td>阿门 (a men)</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Food</td>
+              <td>Sandwich</td>
+              <td>三明治 (a men)</td>
+            </tr>
+            <tr>
+              <td>whiskey</td>
+              <td>威士忌酒 (wei shi ji jiu)</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Arts, Entertainment</td>
+              <td>Disco</td>
+              <td>迪斯科 (di si ke)</td>
+            </tr>
+            <tr>
+              <td>Jazz</td>
+              <td>爵士乐 (jue shi yue)</td>
+            </tr>
+          </table> <br> <br>
+
+          <b>Sample screenshots from Google Ngram:</b> <br> <br>
+          <img src=resources\english.png> <img src=resources\chinese.png>
+
+      </p>
+    
+  </section>
+
+
+
+
+  <!-- end team section -->
+
+<!-- start of sample chart section -->
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="css\chart.css"> -->
+</head>
+<body>
+  <div class="wrapper" id="step4">
+    <h2>STEP 4: VISUALSE DATA</h2>
+    
+
+    <form>
+      Select the langauge:
+      <select name="language" id="language">
+        <option value="english"> English </option>
+        <option value="chinese"> Chinese </option>
+      </select> <br> <br>
+
+      Select the category of words:
+      <select name="categories" id="categories">
+        <option value="politics"> Politics </option>
+        <option value="religion"> Religion </option>
+        <option value="Food"> Food </option>
+        <option value="Arts"> Arts and Entertainment </option>
+      </select> <br> <br>
+
+      Select the specific words:
+      <select name="english" id="english">
+        <option value="coldwar"> Cold War </option>
+        <option value="utopia"> Utopia </option>
+        <option value="eden"> Eden </option>
+        <option value="missal"> Missal </option>
+        <option value="amen"> Amen </option>
+        <option value="sandwich"> Sandwich </option>
+        <option value="whiskey"> Whiskey </option>
+        <option value="disco"> Disco </option>
+        <option value="jazz"> Jazz </option>
+      </select> <br> <br>
+
+      <!--"onclick" should trigger a function in chart.js to generate another graph according to the values selected in the drop-down lists before-->
+      <input type="button" value="Generate graph!" onclick="function()"> <br>
+
+    </form>
+    <canvas id="myChart" width="1600" height="900"></canvas>
+  </div>
+
+  <script src="js\chart.js"></script>
+  <h3>Word usage over time (sample graph)</h3> <br>
+
+
+<!-- end of sample chart section -->
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+
+</body>
+
+</html> 
