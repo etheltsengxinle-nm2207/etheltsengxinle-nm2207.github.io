@@ -99,8 +99,8 @@
                     Discover the beauty of borrowed words in English and Chinese, and why this matters.
                   </p>
                   <div>
-                    <a href="https://docs.google.com/document/d/1IaA6LtBaHl5ZbCMYdfJwhmVhCOkJcVvG9bPeWbwGucY/edit?usp=sharing">
-                      Read More (Week 11 Project Documentation is here!)
+                    <a href="https://docs.google.com/document/d/1Z6MgLuOq0nKWsIeNHE5nqiLq53toZQELbtPcbXISNfY/edit?usp=sharing">
+                      Read More (Week 12 Project Documentation is here!)
                     </a>
                   </div>
                 </div>
@@ -126,8 +126,8 @@
                     Discover the beauty of borrowed words in English and Chinese, and why this matters.
                   </p>
                   <div>
-                    <a href="https://docs.google.com/document/d/1N7WXRb9D3y9rZQa-8CyMQZdhEK0NJB_M9_B7xpwM6p4/edit?usp=sharing">
-                      Read More (Week 10 Project Documentation is here!)
+                    <a href="https://docs.google.com/document/d/1IaA6LtBaHl5ZbCMYdfJwhmVhCOkJcVvG9bPeWbwGucY/edit?usp=sharing">
+                      Read More (Week 11 Project Documentation is here!)
                     </a>
                   </div>
                 </div>
@@ -172,6 +172,9 @@
         </a> <br>
         <a href="https://docs.google.com/document/d/1IaA6LtBaHl5ZbCMYdfJwhmVhCOkJcVvG9bPeWbwGucY/edit?usp=sharing">
           Week 11 Submission
+        </a><br>
+        <a href="https://docs.google.com/document/d/1Z6MgLuOq0nKWsIeNHE5nqiLq53toZQELbtPcbXISNfY/edit?usp=sharing">
+          Week 12 Submission
         </a><br>
 
       </p>
@@ -344,7 +347,7 @@
 
   <!-- end team section -->
 
-<!-- start of sample chart section -->
+<!-- start of line chart section -->
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
   <!--<link rel="stylesheet" type="text/css" href="css\chart.css"> -->
@@ -354,7 +357,6 @@
     <h2>STEP 4: VISUALSE DATA</h2>
     
 
-    <form>
       Select the langauge:
       <select name="language" id="language">
         <option value="english"> English </option>
@@ -382,30 +384,11 @@
         <option value="jazz"> Jazz </option>
       </select> <br> <br>
 
-      <!-- from attempt 3 in toggleDataAttempts
-      <form>
-        <table>
-          <tr> 
-            <td>Type a word from the list:</td>
-            <td><input type="text" name="input1" id="input1" required></td>
-            <td colspan="2"><input type="button" onclick="changedata()" value="Generate graph!"></td> 
-          </tr>
-        </table>
-      </form> -->
-
-      <!-- from attempt 2 in toggleDataAttempts
-      <button onclick="changeData(0)">Cold War</button>
-      <button onclick="changeData(1)">Utopia</button>
-      <button onclick="changeData(2)">Eden</button> -->
-
       <button onclick="engData()">English Words</button>
       <button onclick="chiData()">Chinese Words</button>
 
+      <button onclick="politics()"> Politics </button>
 
-      <!--"onclick" should trigger a function in chart.js to generate another graph according to the values selected in the drop-down lists before-->
-      <!--<input type="button" value="Generate graph!" onclick=""> <br> -->
-
-    </form>
     <canvas id="myChart" width="1600" height="900"></canvas>
   </div>
 
@@ -413,7 +396,35 @@
   <h3>Word usage over time (sample graph)</h3> <br>
 
 
-<!-- end of sample chart section -->
+
+<!-- end of line chart section -->
+
+<!-- start of radar chart section -->
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="css\chart.css"> -->
+</head>
+<body>
+  <div class="wrapper" id="step4">
+    <h2>STEP 4: VISUALSE DATA</h2>
+
+    <canvas id="radarChart" width="1600" height="900"></canvas>
+
+    <button onclick="prev()"> Previous </button>
+    <input id="slider" type="range" min="0" max="1" step=".01">
+    <button onclick="next()"> Next </button>
+
+    <h3 id="year">The year is:</h3>
+
+  </div>
+
+  <script src="js/radarChart.js"></script>
+  <h3>Word usage over time (sample graph)</h3> <br>
+
+<!-- end of radar chart section -->
+
+
 
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
