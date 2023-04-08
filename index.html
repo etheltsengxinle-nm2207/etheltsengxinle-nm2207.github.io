@@ -354,46 +354,16 @@
 </head>
 <body>
   <div class="wrapper" id="step4">
-    <h2>STEP 4: VISUALSE DATA</h2>
+    <h2>STEP 4: VISUALSE DATA (Line Chart)</h2>
     
-
-      Select the langauge:
-      <select name="language" id="language">
-        <option value="english"> English </option>
-        <option value="chinese"> Chinese </option>
-      </select> <br> <br>
-
-      Select the category of words:
-      <select name="categories" id="categories">
-        <option value="politics"> Politics </option>
-        <option value="religion"> Religion </option>
-        <option value="Food"> Food </option>
-        <option value="Arts"> Arts and Entertainment </option>
-      </select> <br> <br>
-
-      Select the specific words:
-      <select name="english" id="english">
-        <option value="coldwar"> Cold War </option>
-        <option value="utopia"> Utopia </option>
-        <option value="eden"> Eden </option>
-        <option value="missal"> Missal </option>
-        <option value="amen"> Amen </option>
-        <option value="sandwich"> Sandwich </option>
-        <option value="whiskey"> Whiskey </option>
-        <option value="disco"> Disco </option>
-        <option value="jazz"> Jazz </option>
-      </select> <br> <br>
-
       <button onclick="engData()">English Words</button>
       <button onclick="chiData()">Chinese Words</button>
-
-      <button onclick="politics()"> Politics </button>
 
     <canvas id="myChart" width="1600" height="900"></canvas>
   </div>
 
   <script src="js\chart.js"></script>
-  <h3>Word usage over time (sample graph)</h3> <br>
+  <h3>Word usage over time</h3> <br>
 
 
 
@@ -407,7 +377,7 @@
 </head>
 <body>
   <div class="wrapper" id="step4">
-    <h2>STEP 4: VISUALSE DATA</h2>
+    <h2>STEP 4: VISUALSE DATA (Radar Chart)</h2>
 
     <canvas id="radarChart" width="1600" height="900"></canvas>
 
@@ -415,12 +385,12 @@
     <input id="slider" type="range" min="0" max="1" step=".01">
     <button onclick="next()"> Next </button>
 
-    <h3 id="year">The year is:</h3>
+    <h4 id="year">The year is:</h4>
 
   </div>
 
   <script src="js/radarChart.js"></script>
-  <h3>Word usage over time (sample graph)</h3> <br>
+  <h3>Word usage over time</h3> <br>
 
 <!-- end of radar chart section -->
 
