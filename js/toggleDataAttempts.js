@@ -35,16 +35,35 @@ function changedata () {
 //event listener to trigger the changeData function when the generate data button is clicked
 input1.addEventListener ("click", function() {changedata()});
 
-
-
-
-
-function langData(english) {
-  if(myChart.data.datasets[english].hidden === false) {
-    myChart.data.datasets[english].hidden=true;
+//Attempt 4: same concept as attempt 3, but using a button instead of text input (not fixed yet)
+//to show only english or only chinese datasets
+function chiData () {
+  //to test if the function can replace data in the graph 
+  //myChart.data.datasets[0].data = chinese[0];
+  for (let i=0; i < myChart.data.datasets.length; i++) {
+      myChart.data.datasets[i].data = [chinese[i]];
   }
-  if (myChart.data.datasets[english].hidden === true) {
-    myChart.data.datasets[english].hidden=false;
-  }
+  myChart.update();
 }
 
+
+function engData () {
+  for (let x=0; x < myChart.data.datasets.length; x++) {
+    myChart.data.datasets[x].data = [english[x]];
+    //console.log(myChart.data.datasets[x].data)
+  }
+  myChart.update();
+}
+
+
+
+for (let i=0; i < coldwar.length; i++) {
+  data.datasets[0].data[0] = coldwar[i];
+  console.log(data.datasets[0].data[0]);
+
+}
+
+
+counter = counter + 1;
+  data.datasets[0].data[0] = coldwar[counter];
+  console.log(data.datasets[0].data[0])  ;
