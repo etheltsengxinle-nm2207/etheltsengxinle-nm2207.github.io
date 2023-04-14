@@ -99,8 +99,8 @@
                     Discover the beauty of borrowed words in English and Chinese, and why this matters.
                   </p>
                   <div>
-                    <a href="https://docs.google.com/document/d/1Z6MgLuOq0nKWsIeNHE5nqiLq53toZQELbtPcbXISNfY/edit?usp=sharing">
-                      Read More (Week 12 Project Documentation is here!)
+                    <a href="https://docs.google.com/document/d/1UPJRAGX0FUrI-mrTsRhePvc5_l3aTEdcGwnpF-OEyqo/edit?usp=sharing">
+                      Read More (Final Report is here!)
                     </a>
                   </div>
                 </div>
@@ -126,8 +126,8 @@
                     Discover the beauty of borrowed words in English and Chinese, and why this matters.
                   </p>
                   <div>
-                    <a href="https://docs.google.com/document/d/1IaA6LtBaHl5ZbCMYdfJwhmVhCOkJcVvG9bPeWbwGucY/edit?usp=sharing">
-                      Read More (Week 11 Project Documentation is here!)
+                    <a href="https://docs.google.com/document/d/1Z6MgLuOq0nKWsIeNHE5nqiLq53toZQELbtPcbXISNfY/edit?usp=sharing">
+                      Read More (Week 12 Project Documentation is here!)
                     </a>
                   </div>
                 </div>
@@ -176,13 +176,16 @@
         <a href="https://docs.google.com/document/d/1Z6MgLuOq0nKWsIeNHE5nqiLq53toZQELbtPcbXISNfY/edit?usp=sharing">
           Week 12 Submission
         </a><br>
+        <a href="https://docs.google.com/document/d/1UPJRAGX0FUrI-mrTsRhePvc5_l3aTEdcGwnpF-OEyqo/edit?usp=sharing">
+          Final Project Report
+        </a>
 
       </p>
     
 
   <!-- end diary entry section -->
 
-  <!-- about section -->
+  <!-- step 1 section -->
 
   <section class="about_section layout_padding" id="step1">
     <div class="container">
@@ -213,7 +216,7 @@
           </div>
           <div>
             <a href="resources/article1.pdf" class="about_btn">
-              Read More (click me!)
+              Explore specific borrowed words in English and Chinese!
             </a>
           </div>
         </div>
@@ -233,8 +236,8 @@
             </div>
           </div>
           <div>
-            <a href="" class="about_btn">
-              Read More (don't click me)
+            <a href="resources/article2.pdf" class="about_btn">
+              Discover the importance of borrowed words in language!
             </a>
           </div>
         </div>
@@ -248,14 +251,13 @@
                 OUR AIM
               </h4>
               <p>
-                This study aims to fill in the gaps of data visualisation in the field of linguistic study, combining data from Google Ngram Viewer
-                and word lists from academic literature to provide a more nuanced understanding of data and the claims made in current linguistic research.
+                This study aims to fill in the gaps of data visualisation in the field of linguistic study, providing a more nuanced understanding of data and the claims made in current linguistic research.
               </p>
             </div>
           </div>
           <div>
-            <a href="" class="about_btn">
-              Read More (don't click me)
+            <a href="#step2" class="about_btn">
+              Read more below!
             </a>
           </div>
         </div>
@@ -263,9 +265,9 @@
     </div>
   </section>
 
-  <!-- end about section -->
+  <!-- end step 1 section -->
 
-  <!-- portfolio section -->
+  <!-- step 2 section -->
   <section class="portfolio_section layout_padding2">
     <div class="container" id="step2">
       <h2>
@@ -277,10 +279,10 @@
       </p>
     
 
-  <!-- end portfolio section -->
+  <!-- end step 2 section -->
 
 
-  <!-- team section  -->
+  <!-- step 3 section  -->
   <section class="team_section layout_padding" id="step3">
     <div class="container">
       <h2>
@@ -290,7 +292,7 @@
         Dataset: <a href="resources/data">Extracted data</a> <br> 
         Data extracted from<a href=https://books.google.com/ngrams/> Google Ngram Viewer </a> <br> <br>
 
-        <b>Word List:</b>
+        <b>Words we will be analysing:</b>
           <table class="center">
             <tr>
               <td>Category</td>
@@ -335,7 +337,7 @@
             </tr>
           </table> <br> <br>
 
-          <b>Sample screenshots from Google Ngram:</b> <br> <br>
+          <b>Sample screenshots from Google Ngram (current research on the topic):</b> <br> <br>
           <img src="resources\english.PNG"> <img src="resources\chinese.PNG">
 
       </p>
@@ -345,7 +347,7 @@
 
 
 
-  <!-- end team section -->
+  <!-- end step 3 section -->
 
 <!-- start of line chart section -->
 <head>
@@ -354,16 +356,23 @@
 </head>
 <body>
   <div class="wrapper" id="step4">
-    <h2>STEP 4: VISUALSE DATA (Line Chart)</h2>
+    <h2>STEP 4.1: VISUALSE DATA (Line Chart)</h2>
     
+      <br>
+
+      <h3>Line Chart of Word Usage over Time</h3> 
+
+      <p class="interactive">Select the language here:
       <button onclick="engData()">English Words</button>
       <button onclick="chiData()">Chinese Words</button>
+      OR ⬇ Select specific words here ⬇</p>
 
     <canvas id="myChart" width="1600" height="900"></canvas>
+
+
   </div>
 
   <script src="js\chart.js"></script>
-  <h3>Word usage over time</h3> <br>
 
 
 
@@ -377,23 +386,47 @@
 </head>
 <body>
   <div class="wrapper" id="step4">
-    <h2>STEP 4: VISUALSE DATA (Radar Chart)</h2>
+    <h2>STEP 4.2: VISUALISE DATA (Radar Chart)</h2>
 
-    <canvas id="radarChart" width="1600" height="900"></canvas>
+    <h3>Radar Chart of Word Usage over Time</h3> 
+    <p class="interactive">⬇ Select the language here ⬇</p>
+    <canvas id="radarChart" width="1600" height="800"></canvas>
 
-    <button onclick="prev()"> Previous </button>
-    <input id="slider" type="range" min="0" max="1" step=".01">
-    <button onclick="next()"> Next </button>
+    <p class="interactive">⬇ Move the slider to select the year of data ⬇</p>
+    <p>
+      1900<input id="slider" type="range" min="0" max="1" step=".01" value="0" >2000
+    </p>
 
-    <h4 id="year">The year is:</h4>
+    <h4 id="year">The year is: 1900</h4>
+
 
   </div>
 
   <script src="js/radarChart.js"></script>
-  <h3>Word usage over time</h3> <br>
 
 <!-- end of radar chart section -->
 
+
+<!-- start of reflection section -->
+<body>
+  <div class="wrapper" id="step5">
+    <h2>STEP 5: REFLECTION</h2>
+
+    <h3>Reflection questions:</h3>
+    <p>
+      1. Which word was most frequently used in English?  
+      <br>
+      2. Which word was most frequently used in Chinese?  
+      <br>
+      3. Is there a difference in the types of words used most frequently in English/ Chinese?
+      <br> 
+      4. How are the word usages affected by socio-political contexts?
+
+    </p>
+
+  </div>
+
+<!-- end of reflection section -->
 
 
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
