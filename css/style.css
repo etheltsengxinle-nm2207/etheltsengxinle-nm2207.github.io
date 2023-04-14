@@ -19,6 +19,22 @@ img {
   width:500px
 }
 
+#slider {
+  width:400px;
+}
+
+.interactive {
+  display: inline-block;
+  padding: 8px 25px;
+  border: 2px solid #c4d70f;
+  border-radius: 35px;
+  margin-top: 55px;
+  background-color: #c4d70f;
+  color: #fefeff;
+
+}
+
+
 /* From css template */
 body {
   font-family: "Poppins", sans-serif;
