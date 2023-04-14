@@ -57,13 +57,78 @@ function engData () {
 
 
 
-for (let i=0; i < coldwar.length; i++) {
-  data.datasets[0].data[0] = coldwar[i];
-  console.log(data.datasets[0].data[0]);
+//old code for changing slider event  
+function changeSlider () {
+  //get the slider value (a number from 0 to 1)
+  var slidervalue = document.getElementById("slider").value;
+  //console.log(slidervalue);
+  
+  //scale the slider value to an integer between 0 and 100
+  var scaledvalue = Math.floor(slidervalue*100);
+  //console.log(scaledvalue);
 
-}
+  //assign it to the data value of the array
+  data.datasets[0].data[0] = coldwar[scaledvalue];
+  data.datasets[0].data[1] = utopia[scaledvalue];
+  data.datasets[0].data[2] = eden[scaledvalue];
+  data.datasets[0].data[3] = amen[scaledvalue];
+  data.datasets[0].data[4] = sandwich[scaledvalue];
+  data.datasets[0].data[5] = whiskey[scaledvalue];
+  data.datasets[0].data[6] = disco[scaledvalue];
+  data.datasets[0].data[7] = jazz[scaledvalue];
+
+  data.datasets[1].data[0] = lengzhan[scaledvalue];
+  data.datasets[1].data[1] = wutuobang[scaledvalue];
+  data.datasets[1].data[2] = yidianyuan[scaledvalue];
+  data.datasets[1].data[3] = amen2[scaledvalue];
+  data.datasets[1].data[4] = sanmingzhi[scaledvalue];
+  data.datasets[1].data[5] = weishijijiu[scaledvalue];
+  data.datasets[1].data[6] = disike[scaledvalue];
+  data.datasets[1].data[7] = jueshiyue[scaledvalue];
+
+  //update the chart
+  radarChart.update();
+
+  let year = scaledvalue + 1900;
+  document.getElementById("year").innerHTML = "The year is: " + year;
+  };
+  
+
+//event listener that calls the changeSlider function when slider is changed
+slider.addEventListener ("change", function() {changeSlider()});
+  
 
 
-counter = counter + 1;
-  data.datasets[0].data[0] = coldwar[counter];
-  console.log(data.datasets[0].data[0])  ;
+function next () {
+  //get the slider value (a number from 0 to 1)
+  var slidervalue = document.getElementById("slider").value;
+  //console.log(slidervalue);
+  
+  //scale the slider value to an integer between 0 and 100
+  var scaledvalue = Math.floor(slidervalue*100);
+
+  var newvalue = scaledvalue + 1;
+  console.log (newvalue);
+
+  data.datasets[0].data[0] = coldwar[newvalue];
+  data.datasets[0].data[1] = utopia[newvalue];
+  data.datasets[0].data[2] = eden[newvalue];
+  data.datasets[0].data[3] = amen[newvalue];
+  data.datasets[0].data[4] = sandwich[newvalue];
+  data.datasets[0].data[5] = whiskey[newvalue];
+  data.datasets[0].data[6] = disco[newvalue];
+  data.datasets[0].data[7] = jazz[newvalue];
+
+  data.datasets[1].data[0] = lengzhan[newvalue];
+  data.datasets[1].data[1] = wutuobang[newvalue];
+  data.datasets[1].data[2] = yidianyuan[newvalue];
+  data.datasets[1].data[3] = amen2[newvalue];
+  data.datasets[1].data[4] = sanmingzhi[newvalue];
+  data.datasets[1].data[5] = weishijijiu[newvalue];
+  data.datasets[1].data[6] = disike[newvalue];
+  data.datasets[1].data[7] = jueshiyue[newvalue];
+  
+
+  radarChart.update();
+
+};
